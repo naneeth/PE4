@@ -1,3 +1,7 @@
+package com.stackroute.pe4;
+
+import com.stackroute.pe4.WordsSorting;
+import com.stackroute.pe4.java.WordsSorting;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,3 +1,7 @@
+package com.stackroute.pe4;
+
+import com.stackroute.pe4.TransposeOfString;
+import com.stackroute.pe4.java.TransposeOfString;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
