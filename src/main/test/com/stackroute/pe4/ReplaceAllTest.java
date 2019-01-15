@@ -1,7 +1,6 @@
 package com.stackroute.pe4;
 
 import com.stackroute.pe4.ReplaceAll;
-import com.stackroute.pe4.java.ReplaceAll;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

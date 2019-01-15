@@ -1,26 +1,19 @@
 package com.stackroute.pe4;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/*
+Write a program to find out the multiple occurrences of the given word in a string using Matcher methods
+ */
 public class MatcherFind {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str1 = br.readLine();
-        String str2 = br.readLine();
-        System.out.println(matcher(str1,str2));
-    }
-    public static String matcher(String s1,String s2){
-        Pattern ptr = Pattern.compile(s2);
-        Matcher mtch = ptr.matcher(s1);
-        String str ="";
-        while (mtch.find()){
-            str = str + "Found at:"+ mtch.start()+ "-" + mtch.end()+"\n";
-
+    public String matcher(String s1, String s2) {
+        Pattern pattern = Pattern.compile(s2);
+        Matcher matcher = pattern.matcher(s1);
+        String outputString = "";
+        while (matcher.find()) {
+            outputString = outputString + "Found at:" + matcher.start() + "-" + matcher.end() + "\n";
         }
-        return str.trim();
+        return outputString.trim();
     }
 }

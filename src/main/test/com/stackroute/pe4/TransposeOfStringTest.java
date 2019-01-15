@@ -1,7 +1,6 @@
 package com.stackroute.pe4;
 
 import com.stackroute.pe4.TransposeOfString;
-import com.stackroute.pe4.java.TransposeOfString;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,11 +22,10 @@ public class TransposeOfStringTest {
     }
 
 
-
     @Test
     public void testTransposeSuccess() {
         String inputString = "my name is akuthota naneeth";
-        String expectedValue = "ym eman si atohtuka hteenan" , actualValue;
+        String expectedValue = "ym eman si atohtuka hteenan", actualValue;
         actualValue = obj.transpose(inputString);
         assertEquals(expectedValue, actualValue);
     }

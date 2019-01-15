@@ -1,29 +1,24 @@
 package com.stackroute.pe4;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+/*
+Write a program to transpose the given string.
+ */
 public class TransposeOfString {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
-       System.out.println(transpose(str));
-    }
-    public static String transpose(String s){
-        if(s.trim()==""||s==null) {
+
+    public static String transpose(String inputString) {
+        if (inputString.trim() == "" || inputString == null) {
             return null;
-        }
-            else{
-            }
-            String[] words = s.split(" ");
-            String str = "";
+        } else {
+            String[] words = inputString.split(" ");
+            String outputString = "";
             for (String item : words) {
-                StringBuffer sbf = new StringBuffer(item);
-                sbf.reverse();
-                str += sbf.toString() + " ";
+                StringBuffer stringBuffer = new StringBuffer(item);
+                stringBuffer.reverse();
+                outputString += stringBuffer.toString() + " ";
             }
-            return str.trim();
+            return outputString.trim();
+
         }
     }
+}
 

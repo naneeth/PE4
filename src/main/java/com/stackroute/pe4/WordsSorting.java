@@ -1,28 +1,24 @@
 package com.stackroute.pe4;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+/*
+Write a program that sets up a String variable containing a paragraph of text of your choice.
+a. Extract the words from the text and sort them into alphabetical order.
+b. Display the sorted list of words
+ */
 import java.util.Arrays;
 
 public class WordsSorting {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
-        System.out.println(wordsSorting(str));
-    }
-    public static String wordsSorting(String s){
-        if(s.trim()==""){
+    public static String wordsSorting(String inputString) {
+        if (inputString.trim() == "") {
             return null;
-        }
-        else{
-        String[] words = s.split(" ");
-        Arrays.sort(words);
-        String str = "" ;
-        for (int i=0;i<words.length;i++){
-           str += words[i] + " ";
-        }
-    return str.trim();
+        } else {
+            String[] words = inputString.split(" ");
+            Arrays.sort(words);
+            String outputString = "";
+            for (int i = 0; i < words.length; i++) {
+                outputString += words[i] + " ";
+            }
+            return outputString.trim();
         }
     }
 }

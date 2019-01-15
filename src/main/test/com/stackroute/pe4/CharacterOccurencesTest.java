@@ -1,7 +1,6 @@
 package com.stackroute.pe4;
 
 import com.stackroute.pe4.CharacterOccurences;
-import com.stackroute.pe4.java.CharacterOccurences;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +34,7 @@ public class CharacterOccurencesTest {
     @Test
     public void testOccurrenceOfCharFailure() {
         int expectedValue = 1, actualValue;
-        actualValue = obj.countOfCharacter(inputString,inputChar1);
+        actualValue = obj.countOfCharacter(inputString, inputChar1);
         assertNotEquals(expectedValue, actualValue);
     }
 
